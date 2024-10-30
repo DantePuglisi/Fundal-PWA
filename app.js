@@ -1,8 +1,8 @@
 // Datos de acoplamientos simulados (sin factor de servicio estático)
 const acoplamientos = [
-  { tamaño: 'F.A. 5', capacidad: 200 },
-  { tamaño: 'F.A. 6', capacidad: 300 },
-  { tamaño: 'F.A. 7', capacidad: 400 }
+  { tamaño: 'F.A. 5', capacidad: 40 },
+  { tamaño: 'F.A. 6', capacidad: 60 },
+  { tamaño: 'F.A. 7', capacidad: 80 }
 ];
 
 // Guardar historial
