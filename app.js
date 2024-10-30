@@ -1,10 +1,9 @@
-// Datos de acoplamientos simulados
+// Datos de acoplamientos simulados (sin factor de servicio estático)
 const acoplamientos = [
-  { tamaño: 'F.A. 5', capacidad: 40, factorServicio: 1.5 },
-  { tamaño: 'F.A. 6', capacidad: 60, factorServicio: 2.2 },
-  { tamaño: 'F.A. 7', capacidad: 80, factorServicio: 3 }
+  { tamaño: 'F.A. 5', capacidad: 200 },
+  { tamaño: 'F.A. 6', capacidad: 300 },
+  { tamaño: 'F.A. 7', capacidad: 400 }
 ];
-
 
 // Guardar historial
 let historial = [];
@@ -42,7 +41,7 @@ function calcularTorque() {
   mostrarAcoplamientos(acoplamientosValidos, torque);
 }
 
-// Mostrar acoplamientos disponibles
+// Mostrar acoplamientos disponibles con factor de servicio calculado dinámicamente
 function mostrarAcoplamientos(acoplamientos, torque) {
   const resultadosAcoplamientos = document.getElementById('coupling-results');
   resultadosAcoplamientos.innerHTML = '';
@@ -68,9 +67,9 @@ function mostrarAcoplamientos(acoplamientos, torque) {
   const tbody = tabla.querySelector('tbody');
 
   acoplamientos.forEach(acoplamiento => {
-      const fila = document.createElement('tr');
       const factorServicio = (acoplamiento.capacidad / torque).toFixed(2);
 
+      const fila = document.createElement('tr');
       fila.innerHTML = `
           <td>${acoplamiento.tamaño}</td>
           <td>${acoplamiento.capacidad}</td>
@@ -117,14 +116,15 @@ function actualizarHistorial() {
   });
 }
 
-
-// Register the service worker
+// Registrar el Service Worker
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/Fundal-PWA/sw.js').then((registration) => {
-          console.log('ServiceWorker registered: ', registration);
-      }).catch((error) => {
-          console.log('ServiceWorker registration failed: ', error);
-      });
+      navigator.serviceWorker.register('/Fundal-PWA/sw.js')
+          .then((registration) => {
+              console.log('Service Worker registrado con éxito:', registration);
+          })
+          .catch((error) => {
+              console.log('Error al registrar el Service Worker:', error);
+          });
   });
 }
