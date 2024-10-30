@@ -1,9 +1,10 @@
 // Datos de acoplamientos simulados
 const acoplamientos = [
-  { tamaño: 'F.A. 5', capacidad: 200, factorServicio: 1.5 },
-  { tamaño: 'F.A. 6', capacidad: 300, factorServicio: 2.2 },
-  { tamaño: 'F.A. 7', capacidad: 400, factorServicio: 3 },
+  { tamaño: 'F.A. 5', capacidad: 40, factorServicio: 1.5 },
+  { tamaño: 'F.A. 6', capacidad: 60, factorServicio: 2.2 },
+  { tamaño: 'F.A. 7', capacidad: 80, factorServicio: 3 }
 ];
+
 
 // Guardar historial
 let historial = [];
