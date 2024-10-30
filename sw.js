@@ -1,10 +1,10 @@
-const cacheName = 'pwa-calculator-v1';
+const cacheName = 'pwa-fundal-v1';
 const filesToCache = [
-    '/',
-    '/index.html',
-    '/app.js',
-    '/manifest.json',
-    '/assets/tecnodinamiafundal_logo.jpeg'
+    '/Fundal-PWA/',
+    '/Fundal-PWA/index.html',
+    '/Fundal-PWA/app.js',
+    '/Fundal-PWA/manifest.json',
+    '/Fundal-PWA/assets/tecnodinamiafundal_logo.jpeg'
 ];
 
 self.addEventListener('install', (e) => {
