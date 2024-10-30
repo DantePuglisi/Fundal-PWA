@@ -32,6 +32,8 @@ function calcularTorque() {
   // Mostrar resultado de torque
   resultadoTorque.innerHTML = `<p>Torque Calculado: ${torque.toFixed(2)} Nm</p>`;
 
+  console.log("Here")
+
   // Sugerir acoplamientos basados en el rango de factor de servicio (1.2 a 3)
   const acoplamientosValidos = acoplamientos.filter(acoplamiento => {
       const factorServicio = acoplamiento.capacidad / torque;
