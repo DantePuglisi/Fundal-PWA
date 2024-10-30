@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +7,63 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>Fundal</title>
-    <link rel="manifest" href="/manifest.json">
     <link rel="apple-touch-icon" sizes="192x192" href="/Fundal-PWA/assets/fundal-logo-small.png">
     <link rel="apple-touch-icon" sizes="512x512" href="/Fundal-PWA/assets/fundal-logo.png">
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
-        input { margin: 10px; padding: 5px; }
-        button { padding: 5px 10px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input, select, button {
+            margin: 10px;
+            padding: 5px;
+        }
+        .result {
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
     </style>
 </head>
 <body>
-    <h1>PWA Sum Calculator</h1>
-    <input type="number" id="num1" placeholder="Enter first number">
-    <input type="number" id="num2" placeholder="Enter second number">
-    <button onclick="calculateSum()">Calculate Sum</button>
-    <h2 id="result"></h2>
+    <h1>Calculador de Torque</h1>
+    
+    <label for="power-type">Selecciona tipo de potencia:</label>
+    <select id="power-type">
+        <option value="hp">HP</option>
+        <option value="kw">kW</option>
+    </select>
+
+    <label for="power">Potencia:</label>
+    <input type="number" id="power" placeholder="Ingresa potencia">
+
+    <label for="rpm">RPM:</label>
+    <input type="number" id="rpm" placeholder="Ingresa RPM">
+
+    <label for="reducer-ratio">Relación del reductor:</label>
+    <input type="number" id="reducer-ratio" placeholder="Ingresa relación del reductor">
+
+    <button onclick="calcularTorque()">Calcular Torque</button>
+
+    <div class="result" id="result"></div>
+
+    <h2>Acoplamientos Disponibles</h2>
+    <div id="coupling-results"></div>
+
+    <div id="specifications"></div>
+
+    <h2>Historial</h2>
+    <div id="history"></div>
 
     <script src="app.js"></script>
 </body>
