@@ -35,6 +35,10 @@ function calcularTorque() {
   // Sugerir acoplamientos basados en el rango de factor de servicio (1.2 a 3)
   const acoplamientosValidos = acoplamientos.filter(acoplamiento => {
       const factorServicio = acoplamiento.capacidad / torque;
+      console.log(acoplamiento.tamaño)
+      console.log(acoplamiento.capacidad)
+      console.log(torque)
+      console.log(factorServicio)
       return factorServicio >= 1.2 && factorServicio <= 3;
   });
 
