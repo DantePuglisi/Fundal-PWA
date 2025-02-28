@@ -149,21 +149,23 @@ export async function renderResultsScreen(container, state, onBack) {
     loadingMessage.textContent = 'Calculando recomendaciones...';
     recommendationSection.appendChild(loadingMessage);
     
-    // Try various possible paths for the JSON file
-    let response;
-    const possiblePaths = ['./data/couplings.json', '../data/couplings.json', '/data/couplings.json'];
+    // Get the base path for the current environment
+    const basePath = location.pathname.includes('/Fundal-PWA') 
+      ? '/Fundal-PWA' 
+      : '';
     
-    for (const path of possiblePaths) {
-      try {
-        console.log(`Trying to load couplings from: ${path}`);
-        response = await fetch(path);
-        if (response.ok) {
-          console.log(`Successfully loaded couplings from: ${path}`);
-          break;
-        }
-      } catch (e) {
-        console.log(`Failed to load from ${path}: ${e.message}`);
+    // Try to load the couplings file
+    let response;
+    const filePath = `${basePath}/data/couplings.json`;
+    
+    try {
+      console.log(`Trying to load couplings from: ${filePath}`);
+      response = await fetch(filePath);
+      if (response.ok) {
+        console.log(`Successfully loaded couplings from: ${filePath}`);
       }
+    } catch (e) {
+      console.log(`Failed to load from ${filePath}: ${e.message}`);
     }
     
     if (!response || !response.ok) {

@@ -26,7 +26,14 @@ export async function renderAppSelectionScreen(container, state, onNext) {
   let applications = [];
   
   try {
-    const response = await fetch('../data/service_factors.json');
+    // Get the base path for the current environment
+    const basePath = location.pathname.includes('/Fundal-PWA') 
+      ? '/Fundal-PWA' 
+      : '';
+    
+    const filePath = `${basePath}/data/service_factors.json`;
+    const response = await fetch(filePath);
+    
     if (!response.ok) {
       throw new Error(`Error loading applications: ${response.status} ${response.statusText}`);
     }
