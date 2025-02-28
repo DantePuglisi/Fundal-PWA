@@ -169,6 +169,17 @@ h3 {
   color: #666;
 }
 
+/* Improved bullet points in lists */
+ul {
+  padding-left: 30px;
+  margin: 10px 0;
+}
+
+li {
+  margin-bottom: 5px;
+  padding-left: 5px;
+}
+
 .back-button {
   background-color: #666;
   margin-right: 10px;

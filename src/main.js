@@ -16,7 +16,12 @@ const appState = {
 // Initialize service worker for PWA
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js')
+    // Get the base path for the current environment
+    const basePath = location.pathname.includes('/Fundal-PWA') 
+      ? '/Fundal-PWA' 
+      : '';
+    
+    navigator.serviceWorker.register(`${basePath}/service-worker.js`)
       .then(registration => {
         console.log('ServiceWorker registration successful with scope: ', registration.scope);
       })
