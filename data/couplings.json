@@ -1,0 +1,229 @@
+{
+  "couplings": [
+    {
+      "model": "FA",
+      "type": "Elástico",
+      "description": "Acople compuesto por dos masas de fundicion, con centro flexible de caucho natural (gran respuesta elástica), con insertos de acero, vulcanizados, cumpliendo con la funcion especifica de un acople elástico que es la de absorber las vibraciones producidas por las partes acopladas.",
+      "sizes": [
+        {
+          "size": "FA 1",
+          "torque": 29,
+          "torqueUnit": "Nm",
+          "maxRPM": 3750,
+          "shaftSizes": {
+            "masaConvencional": 15,
+            "masaLlena": 28
+          }
+        },
+        {
+          "size": "FA 2",
+          "torque": 44,
+          "torqueUnit": "Nm",
+          "maxRPM": 3750,
+          "shaftSizes": {
+            "masaConvencional": 22,
+            "masaLlena": 38
+          }
+        },
+        {
+          "size": "FA 3",
+          "torque": 89,
+          "torqueUnit": "Nm",
+          "maxRPM": 3750,
+          "shaftSizes": {
+            "masaConvencional": 30,
+            "masaLlena": 48
+          }
+        },
+        {
+          "size": "FA 4",
+          "torque": 373,
+          "torqueUnit": "Nm",
+          "maxRPM": 3750,
+          "shaftSizes": {
+            "masaConvencional": 43,
+            "masaLlena": 68
+          }
+        },
+        {
+          "size": "FA 5",
+          "torque": 755,
+          "torqueUnit": "Nm",
+          "maxRPM": 3750,
+          "shaftSizes": {
+            "masaConvencional": 53,
+            "masaLlena": 87
+          }
+        },
+        {
+          "size": "FA 6",
+          "torque": 1059,
+          "torqueUnit": "Nm",
+          "maxRPM": 3000,
+          "shaftSizes": {
+            "masaConvencional": 66,
+            "masaLlena": 90
+          }
+        },
+        {
+          "size": "FA 7",
+          "torque": 2030,
+          "torqueUnit": "Nm",
+          "maxRPM": 2500,
+          "shaftSizes": {
+            "masaConvencional": 75,
+            "masaLlena": 112
+          }
+        },
+        {
+          "size": "FA 8",
+          "torque": 2599,
+          "torqueUnit": "Nm",
+          "maxRPM": 2300,
+          "shaftSizes": {
+            "masaConvencional": 87,
+            "masaLlena": 125
+          }
+        },
+        {
+          "size": "FA 9",
+          "torque": 7063,
+          "torqueUnit": "Nm",
+          "maxRPM": 1800,
+          "shaftSizes": {
+            "masaConvencional": 118,
+            "masaLlena": 160
+          }
+        },
+        {
+          "size": "FA 10",
+          "torque": 11821,
+          "torqueUnit": "Nm",
+          "maxRPM": 1500,
+          "shaftSizes": {
+            "masaConvencional": 140,
+            "masaLlena": 180
+          }
+        },
+        {
+          "size": "FA 11",
+          "torque": 21915,
+          "torqueUnit": "Nm",
+          "maxRPM": 1200,
+          "shaftSizes": {
+            "masaConvencional": 175,
+            "masaLlena": 220
+          }
+        }
+      ],
+      "features": [
+        "Alta flexibilidad",
+        "Absorción de vibraciones",
+        "Desalineación permitida hasta 4°",
+        "El modelo FA es de Boca"
+      ]
+    },
+    {
+      "model": "FAS",
+      "type": "Elástico",
+      "description": "Acople a tacos amortiguadores, cumpliendo eficazmente con la funcion especifica de un acople elástico que es la de absorber vibraciones. Para aplicaciones en ambientes sometidos a altas temperaturas, hidrocarburos o la accion de aceites.",
+      "sizes": [
+        {
+          "size": "FAS 2",
+          "torque": 100,
+          "torqueUnit": "Nm",
+          "maxRPM": 5000,
+          "shaftSizes": {
+            "masaConvencional": 35
+          }
+        },{
+          "size": "FAS 3",
+          "torque": 302,
+          "torqueUnit": "Nm",
+          "maxRPM": 3500,
+          "shaftSizes": {
+            "masaConvencional": 46
+          }
+        },{
+          "size": "FAS 4",
+          "torque": 530,
+          "torqueUnit": "Nm",
+          "maxRPM": 3500,
+          "shaftSizes": {
+            "masaConvencional": 60
+          }
+        },{
+          "size": "FAS 5",
+          "torque": 880,
+          "torqueUnit": "Nm",
+          "maxRPM": 2500,
+          "shaftSizes": {
+            "masaConvencional": 70
+          }
+        },{
+          "size": "FAS 6",
+          "torque": 1158,
+          "torqueUnit": "Nm",
+          "maxRPM": 2500,
+          "shaftSizes": {
+            "masaConvencional": 75
+          }
+        },{
+          "size": "FAS 7",
+          "torque": 2800,
+          "torqueUnit": "Nm",
+          "maxRPM": 2200,
+          "shaftSizes": {
+            "masaConvencional": 88
+          }
+        },{
+          "size": "FAS 8",
+          "torque": 3770,
+          "torqueUnit": "Nm",
+          "maxRPM": 2000,
+          "shaftSizes": {
+            "masaConvencional": 103
+          }
+        },{
+          "size": "FAS 9",
+          "torque": 7000,
+          "torqueUnit": "Nm",
+          "maxRPM": 1800,
+          "shaftSizes": {
+            "masaConvencional": 120
+          }
+        },{
+          "size": "FAS 9A",
+          "torque": 12460,
+          "torqueUnit": "Nm",
+          "maxRPM": 1500,
+          "shaftSizes": {
+            "masaConvencional": 120
+          }
+        },{
+          "size": "FAS 10",
+          "torque": 29500,
+          "torqueUnit": "Nm",
+          "maxRPM": 1300,
+          "shaftSizes": {
+            "masaConvencional": 150
+          }
+        },{
+          "size": "FAS 11",
+          "torque": 37800,
+          "torqueUnit": "Nm",
+          "maxRPM": 1200,
+          "shaftSizes": {
+            "masaConvencional": 182
+          }
+        }
+      ],
+      "features": [
+        "Transmisión de potencia sin pérdida",
+        "Alta rigidez torsional",
+        "Desalineación permitida mínima (0.5°)",
+        "El FAS hace Yoga los miercoles"
+      ]
+    }
+  ]
+}

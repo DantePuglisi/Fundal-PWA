@@ -1,0 +1,148 @@
+{
+  "applications": [
+    {
+      "id": "pump",
+      "name": "Bombas",
+      "categories": [
+        {
+          "name": "Bombas centrífugas",
+          "serviceFactor": 1.5
+        },
+        {
+          "name": "Bombas de lóbulos",
+          "serviceFactor": 1.7
+        },
+        {
+          "name": "Bombas de pistón",
+          "serviceFactor": 2.0
+        },
+        {
+          "name": "Bombas de engranajes",
+          "serviceFactor": 1.6
+        }
+      ],
+      "defaultServiceFactor": 1.5,
+      "description": "Bombas para transferencia de líquidos, incluidas bombas para agua, químicos y petróleo."
+    },
+    {
+      "id": "fan",
+      "name": "Ventiladores & Sopladores",
+      "categories": [
+        {
+          "name": "Ventiladores axiales",
+          "serviceFactor": 1.3
+        },
+        {
+          "name": "Ventiladores centrífugos",
+          "serviceFactor": 1.4
+        },
+        {
+          "name": "Sopladores de desplazamiento positivo",
+          "serviceFactor": 1.6
+        }
+      ],
+      "defaultServiceFactor": 1.4,
+      "description": "Equipos para movimiento de aire, incluidos ventiladores industriales y sopladores para procesos."
+    },
+    {
+      "id": "compressor",
+      "name": "Compresores",
+      "categories": [
+        {
+          "name": "Compresores centrífugos",
+          "serviceFactor": 1.7
+        },
+        {
+          "name": "Compresores de tornillo",
+          "serviceFactor": 1.8
+        },
+        {
+          "name": "Compresores de pistón",
+          "serviceFactor": 2.0
+        }
+      ],
+      "defaultServiceFactor": 1.8,
+      "description": "Equipos para compresión de aire y gases, incluidos compresores industriales y para refrigeración."
+    },
+    {
+      "id": "mixer",
+      "name": "Mezcladores & Agitadores",
+      "categories": [
+        {
+          "name": "Mezcladores de líquidos",
+          "serviceFactor": 1.8
+        },
+        {
+          "name": "Mezcladores de pasta",
+          "serviceFactor": 2.0
+        },
+        {
+          "name": "Agitadores industriales",
+          "serviceFactor": 2.2
+        }
+      ],
+      "defaultServiceFactor": 2.0,
+      "description": "Equipos para mezcla de líquidos y sólidos, incluidos mezcladores industriales y agitadores para procesos químicos."
+    },
+    {
+      "id": "conveyor",
+      "name": "Transportadores",
+      "categories": [
+        {
+          "name": "Transportadores de banda",
+          "serviceFactor": 1.5
+        },
+        {
+          "name": "Transportadores de cadena",
+          "serviceFactor": 1.7
+        },
+        {
+          "name": "Transportadores de tornillo",
+          "serviceFactor": 1.8
+        }
+      ],
+      "defaultServiceFactor": 1.7,
+      "description": "Sistemas de transporte de materiales, incluidos transportadores para minería, alimentos y otros procesos industriales."
+    },
+    {
+      "id": "crusher",
+      "name": "Trituradoras & Molinos",
+      "categories": [
+        {
+          "name": "Trituradoras de mandíbula",
+          "serviceFactor": 2.2
+        },
+        {
+          "name": "Molinos de bolas",
+          "serviceFactor": 2.0
+        },
+        {
+          "name": "Pulverizadores",
+          "serviceFactor": 2.5
+        }
+      ],
+      "defaultServiceFactor": 2.2,
+      "description": "Equipos para reducción de tamaño de materiales, incluidas trituradoras y molinos para minería y procesamiento de materiales."
+    },
+    {
+      "id": "generator",
+      "name": "Generadores",
+      "categories": [
+        {
+          "name": "Generadores de emergencia",
+          "serviceFactor": 1.3
+        },
+        {
+          "name": "Generadores de respaldo",
+          "serviceFactor": 1.2
+        },
+        {
+          "name": "Generadores industriales",
+          "serviceFactor": 1.5
+        }
+      ],
+      "defaultServiceFactor": 1.3,
+      "description": "Equipos para generación de energía eléctrica, incluidos generadores para emergencias e industriales."
+    }
+  ]
+}
